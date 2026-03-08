@@ -1,10 +1,37 @@
 # 🚀 Shelby Testnet RPC Node Guide
 
-A complete step-by-step guide to **install and run a Shelby Testnet RPC Node**.
+<p align="center">
 
-Shelby provides **verifiable global object storage for AI workloads**, designed to power the next generation of **AI and decentralized infrastructure**.
+![GitHub stars](https://img.shields.io/github/stars/manhdz9990/shelby-testnet-node-guide?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/manhdz9990/shelby-testnet-node-guide?style=for-the-badge)
+![GitHub license](https://img.shields.io/github/license/manhdz9990/shelby-testnet-node-guide?style=for-the-badge)
 
-This guide helps you deploy and run a **Shelby RPC node** using Docker.
+</p>
+
+A **complete step-by-step guide** to install and run a **Shelby Testnet RPC Node**.
+
+Shelby provides **verifiable global object storage for AI workloads**, powering the next generation of **AI and decentralized infrastructure**.
+
+This guide explains how to deploy a **Shelby RPC node using Docker**.
+
+---
+
+# 📑 Table of Contents
+
+* Official Links
+* System Requirements
+* Step 1 — Update Server
+* Step 2 — Install Dependencies
+* Step 3 — Clone Shelby Node
+* Step 4 — Configure Node
+* Step 5 — Start RPC Node
+* Step 6 — Check Logs
+* Step 7 — Verify RPC
+* Useful Commands
+* About Shelby
+* Contributing
+* Support
+* Author
 
 ---
 
@@ -24,9 +51,9 @@ https://discord.gg/shelbyserves
 
 ---
 
-# 📦 System Requirements
+# 💻 System Requirements
 
-## Minimum Requirements
+## Minimum
 
 | Resource | Requirement  |
 | -------- | ------------ |
@@ -47,7 +74,7 @@ https://discord.gg/shelbyserves
 
 # ⚙️ Step 1 — Update Server
 
-Update your server packages.
+Update system packages.
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -63,7 +90,7 @@ Install required packages.
 sudo apt install curl git docker.io docker-compose -y
 ```
 
-Enable Docker service.
+Enable Docker.
 
 ```bash
 sudo systemctl enable docker
@@ -73,20 +100,20 @@ sudo systemctl start docker
 Verify Docker installation.
 
 ```bash
-docker --version
+docker version
 ```
 
 ---
 
 # 📥 Step 3 — Clone Shelby Node Repository
 
-Clone the official Shelby node repository.
+Clone the official Shelby repository.
 
 ```bash
 git clone https://github.com/shelbyxyz/shelby-node.git
 ```
 
-Enter the project directory.
+Enter the directory.
 
 ```bash
 cd shelby-node
@@ -96,19 +123,17 @@ cd shelby-node
 
 # ⚙️ Step 4 — Configure Node
 
-Copy the environment configuration file.
+Copy the environment file.
 
 ```bash
 cp .env.example .env
 ```
 
-Edit the configuration file.
+Edit configuration.
 
 ```bash
 nano .env
 ```
-
-Modify the parameters if needed.
 
 Save and exit.
 
@@ -116,7 +141,7 @@ Save and exit.
 
 # 🚀 Step 5 — Start Shelby RPC Node
 
-Run the Shelby node using Docker.
+Run the node using Docker.
 
 ```bash
 docker compose up -d
@@ -128,13 +153,13 @@ Check running containers.
 docker ps
 ```
 
-If the container appears in the list, the node is running successfully.
+If the container appears in the list, your node is running successfully.
 
 ---
 
-# 📜 Step 6 — Check Node Logs
+# 📜 Step 6 — Check Logs
 
-Monitor node logs to ensure everything is working correctly.
+Monitor node logs.
 
 ```bash
 docker logs -f shelby-node
@@ -146,13 +171,13 @@ Press **CTRL + C** to exit logs.
 
 # 🔎 Step 7 — Verify RPC Endpoint
 
-Test your RPC endpoint in the browser.
+Open the RPC endpoint in your browser.
 
 ```
 http://YOUR_SERVER_IP:8545
 ```
 
-If the endpoint responds, your **RPC node is operational**.
+If the endpoint responds, the **RPC node is operational**.
 
 ---
 
@@ -188,7 +213,7 @@ List running containers.
 docker ps
 ```
 
-Check container logs.
+View logs.
 
 ```bash
 docker logs shelby-node
@@ -198,16 +223,16 @@ docker logs shelby-node
 
 # 🧠 About Shelby
 
-Shelby is building **verifiable infrastructure for AI data storage**.
+Shelby builds **verifiable infrastructure for AI data storage**.
 
 The protocol enables:
 
-* Global data availability
-* Verifiable storage proofs
-* Infrastructure for AI workloads
-* Scalable decentralized data systems
+• Global data availability
+• Verifiable storage proofs
+• Infrastructure for AI workloads
+• Scalable decentralized storage
 
-Shelby aims to become a **data layer for AI and crypto applications**.
+Shelby aims to become a **data layer for AI applications**.
 
 ---
 
@@ -217,9 +242,9 @@ Contributions are welcome.
 
 You can help by:
 
-* Improving documentation
-* Submitting pull requests
-* Reporting issues
+• Improving documentation
+• Submitting pull requests
+• Reporting issues
 
 ---
 
@@ -235,7 +260,7 @@ If this guide helped you:
 
 # 👤 Author
 
-Manh100k Web3
+**Manh100k Web3**
 
 Web3 Contributor
 Testnet Hunter
@@ -245,5 +270,6 @@ Community Builder
 
 # ⚠️ Disclaimer
 
-This guide is for educational purposes.
-Always verify commands and official documentation before running nodes.
+This guide is provided for **educational purposes only**.
+
+Always verify commands and refer to official documentation before running nodes.
