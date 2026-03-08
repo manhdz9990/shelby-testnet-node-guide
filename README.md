@@ -1,7 +1,3 @@
-# shelby-testnet-node-guide
-Step-by-step guide to run Shelby Testnet RPC Node
-# Shelby Testnet RPC Node Guide
-
 # 🚀 Shelby Testnet RPC Node Guide
 
 A complete step-by-step guide to **install and run a Shelby Testnet RPC Node**.
